@@ -45,6 +45,9 @@
   <!-- Main stylesheet and color file-->
   <link href="assets/css/style.css" rel="stylesheet">
   <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.0.0/dist/css/mstepper.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
@@ -99,53 +102,79 @@
             <div class="col-sm-8 col-sm-offset-2">
               <h4 class="font-alt mb-0">informe abaixo os dados do novo usuário</h4>
               <hr class="divider-w mt-10 mb-20">
-              <form class="form" role="form">
-                <div class="form-group">
-                  <input class="form-control input-lg" type="text" placeholder="usuário" />
-                </div>
-                <div class="form-group">
-                  <input class="form-control input-lg" type="text" placeholder="CNPJ" />
-                </div>
-                <div class="form-group">
-                  <input class="form-control input-lg" type="text" placeholder="nome do usuário" />
-                </div>
-                <div class="form-group">
-                  <input class="form-control input-lg" type="text" placeholder="e-mail" />
-                </div>
-                <div class="form-group">
-                  <input class="form-control input-lg" type="password" placeholder="password" />
-                </div>
-                <div class="form-group">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      O usuário é revisor?
+              <ul class="stepper linear">
+                <li class="step active">
+                  <div class="step-title waves-effect">Dados do Usuário</div>
+                  <div class="step-content">
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="usuário" />
                     </div>
-                    <div class="col-lg-4">
-                      <input type="checkbox" class="check" id="check" />
-                      <label for="check" style="--d: 25px;">
-                        <svg viewBox="0,0,50,50">
-                          <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                      </label>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="CNPJ" />
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="nome do usuário" />
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="e-mail" />
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="password" placeholder="password" />
+                    </div>
+                    <div class="step-actions">
+                      <!-- Here goes your actions buttons -->
+                      <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
                     </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      O usuário é administrador?
+                </li>
+                <li class="step">
+                  <div class="step-title waves-effect">Questão 1</div>
+                  <div class="step-content">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-lg-8">
+                          O usuário é revisor?
+                        </div>
+                        <div class="col-lg-4">
+                          <input type="checkbox" class="check" id="check" />
+                          <label for="check" style="--d: 25px;">
+                            <svg viewBox="0,0,50,50">
+                              <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-lg-4">
-                      <input type="checkbox" class="check" id="check2" />
-                      <label for="check2" style="--d: 25px;">
-                        <svg viewBox="0,0,50,50">
-                          <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                      </label>
+                    <div class="step-actions">
+                      <!-- Here goes your actions buttons -->
+                      <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
                     </div>
                   </div>
-                </div>
-              </form>
+                </li>
+                <li class="step">
+                  <div class="step-title waves-effect">Questão 2</div>
+                  <div class="step-content">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-lg-8">
+                          O usuário é administrador?
+                        </div>
+                        <div class="col-lg-4">
+                          <input type="checkbox" class="check" id="check2" />
+                          <label for="check2" style="--d: 25px;">
+                            <svg viewBox="0,0,50,50">
+                              <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step-actions">
+                      <!-- Here goes your actions buttons -->
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -158,7 +187,7 @@
         <div class="chat">
           <div class="header">
             <span class="title">
-              what's on your mind?
+              Chat
             </span>
             <button>
               <i class="fa fa-times" aria-hidden="true"></i>
@@ -179,8 +208,17 @@
     JavaScripts
     =============================================
     -->
+  <script>
+    var stepper = document.querySelector('.stepper');
+    var stepperInstace = new MStepper(stepper, {
+      // options
+      firstActive: 0 // this is the default
+    })
+  </script>
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- JS -->
+  <script src="https://unpkg.com/materialize-stepper@3.0.0/dist/js/mstepper.min.js"></script>
   <script src="assets/lib/wow/dist/wow.js"></script>
   <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
   <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
