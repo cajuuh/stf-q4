@@ -187,8 +187,8 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-lg-8">
-                            Haverá melhorias incrementais, novas característica e/ou funcionalidades, que levem a ganho de
-                            produtividade/desempenho resultando em maior competitividade?
+                          Haverá melhorias incrementais, novas característica e/ou funcionalidades, que levem a ganho de
+                          produtividade/desempenho resultando em maior competitividade?
                         </div>
                         <div class="col-lg-4">
                           <input type="checkbox" class="check" id="check2" />
@@ -212,7 +212,7 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-lg-8">
-                            A especificação técnica do projeto foi/será desenvolvida internamente pela empresa?
+                          A especificação técnica do projeto foi/será desenvolvida internamente pela empresa?
                         </div>
                         <div class="col-lg-4">
                           <input type="checkbox" class="check" id="check2" />
@@ -236,7 +236,7 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-lg-8">
-                            Haverá risco tecnológico?
+                          Haverá risco tecnológico?
                         </div>
                         <div class="col-lg-4">
                           <input type="checkbox" class="check" id="check2" />
@@ -262,31 +262,38 @@
         </div>
       </section>
       <div class="floating-chat">
-          <i class="fa fa-comments" aria-hidden="true"></i>
-          <div class="chat">
-            <div class="header">
-              <span class="title">
-                Chat
-              </span>
-              <button>
-                <i class="fa fa-times" aria-hidden="true"></i>
-              </button>
-  
-            </div>
-            <ul class="messages">
-              <li class="other">Olá, como posso ajudar?</li>
-            </ul>
-            <div class="footer">
-              <div class="text-box" contenteditable="true" disabled="true"></div>
-              <button id="sendMessage">send</button>
-            </div>
+        <i class="fa fa-comments" aria-hidden="true"></i>
+        <div class="chat">
+          <div class="header">
+            <span class="title">
+              Chat
+            </span>
+            <button>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+
+          </div>
+          <ul class="messages">
+            <li class="other">Olá, como posso ajudar?</li>
+          </ul>
+          <div class="footer">
+            <div class="text-box" contenteditable="true" disabled="true"></div>
+            <button id="sendMessage">send</button>
           </div>
         </div>
+      </div>
   </main>
   <!--  
     JavaScripts
     =============================================
     -->
+  <script>
+    var stepper = document.querySelector('.stepper');
+    var stepperInstace = new MStepper(stepper, {
+      // options
+      firstActive: 0 // this is the default
+    })
+  </script>
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- JS -->

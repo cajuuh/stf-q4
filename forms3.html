@@ -133,7 +133,7 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-lg-8">
-                            O usuário é revisor?
+                          O usuário é revisor?
                         </div>
                         <div class="col-lg-4">
                           <input type="checkbox" class="check" id="check" />
@@ -157,7 +157,7 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-lg-8">
-                            O usuário é administrador?
+                          O usuário é administrador?
                         </div>
                         <div class="col-lg-4">
                           <input type="checkbox" class="check" id="check2" />
@@ -208,6 +208,13 @@
     JavaScripts
     =============================================
     -->
+  <script>
+    var stepper = document.querySelector('.stepper');
+    var stepperInstace = new MStepper(stepper, {
+      // options
+      firstActive: 0 // this is the default
+    })
+  </script>
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- JS -->
