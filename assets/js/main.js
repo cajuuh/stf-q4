@@ -14,6 +14,12 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
     });
     $(document).ready(function () {
 
+        var stepper = document.querySelector('.stepper');
+        var stepperInstace = new MStepper(stepper, {
+            // options
+            firstActive: 0 // this is the default
+        })
+
         var element = $('.floating-chat');
         var myStorage = localStorage;
 
