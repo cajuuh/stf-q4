@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,20 +53,24 @@
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-  </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
-      <div class="page-loader">
-        <div class="loader">Loading...</div>
-      </div>
-      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="./assets/images/quantum.png"/></a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <!-- <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span
+                            class="sr-only">Toggle
+                            navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a
+                        class="navbar-brand" href="index.html"><img src="./assets/images/quantum.png" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
                   <li><a href="index_mp_fullscreen_video_background.html">Default</a></li>
                   <li><a href="index_op_fullscreen_gradient_overlay.html">One Page</a></li>
@@ -78,75 +83,90 @@
                   <li><a href="index_shop.html">Shop</a></li>
                 </ul>
               </li> -->
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <section class="home-section bg-dark-30" id="home">
-        <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=1Gae_R0Bvhs', containment:'.home-section', startAt:01, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:00}"></div>
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">Innovfund</div>
-            <div class="font-alt mb-40 titan-title-size-4"><span class="rotate">Inovação | Inspiração | Tecnologia</span>
+                    </ul>
+                </div>
             </div>
-            <a class="section-scroll btn btn-border-w btn-round" id="desaparece">login</a>
-            <style>
-                #aparece { display: none; }
-            </style>
-            <div class="container" id="aparece">
-                <div class="row centralize">
-                    <div class="col-sm-5 col-sm-offset-p mb-sm-40">
-                    <h4 class="font-alt">Login</h4>
-                    <hr class="divider-w mb-10">
-                    <form class="form">
-                        <div class="form-group">
-                        <input class="form-control" id="username" type="text" name="username" placeholder="user id"/>
+        </nav>
+        <section class="home-section bg-dark-30" id="home">
+            <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=1Gae_R0Bvhs', containment:'.home-section', startAt:01, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:00}"></div>
+            <div class="titan-caption">
+                <div class="caption-content">
+                    <div class="font-alt mb-30 titan-title-size-1">Innovfund</div>
+                    <div class="font-alt mb-40 titan-title-size-4"><span class="rotate">Inovação | Inspiração |
+                            Tecnologia</span>
+                    </div>
+                    <a class="section-scroll btn btn-border-w btn-round" id="desaparece">login</a>
+
+                    <style>
+                        #aparece { display: none; }
+                    </style>
+
+                    <div class="container" id="aparece">
+                        <div class="row centralize">
+                            <div class="col-sm-5 col-sm-offset-p mb-sm-40">
+                                <h4 class="font-alt">Login</h4>
+                                <hr class="divider-w mb-10">
+                                <form class="form">
+                                    <div class="form-group">
+                                        <input class="form-control" id="username" type="text" name="username"
+                                            placeholder="user id" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="password" type="password" name="password"
+                                            placeholder="Password" />
+                                    </div>
+                                    <div class="form-group">
+                                        <a class="btn btn-round btn-b" href="pricing2.html">entrar</a>
+                                    </div>
+                                    <div class="form-group"><a style="color: white !important" href="contact2.html">Esqueceu
+                                            a Senha?</a></div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="form-group">
-                        <input class="form-control" id="password" type="password" name="password" placeholder="Password"/>
-                        </div>
-                        <div class="form-group">
-                        <a class="btn btn-round btn-b" href="pricing2.html">entrar</a>
-                        </div>
-                        <div class="form-group" ><a style="color: white !important" href="contact2.html">Esqueceu a Senha?</a></div>
-                    </form>
                     </div>
                 </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <div class="main">
-        <section class="module" id="about">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <h2 class="module-title font-alt">Bem-vindo(a) ao Innovfund</h2>
-                <div class="module-subtitle font-serif large-text">Com a ajuda da inteligência artificial do IBM Watson estou aqui para auxiliá-lo na captação do benefício tributário de inovação tecnológica em relação ao projeto que você está desenvolvendo!</div>
-              </div>
-            </div>
-          </div>
         </section>
-        <div class="floating-chat">
-          <i class="fa fa-comments" aria-hidden="true"></i>
-          <div class="chat">
-            <div class="header">
-              <span class="title">
-                what's on your mind?
-              </span>
-              <button>
-                <i class="fa fa-times" aria-hidden="true"></i>
-              </button>
 
+        <div class="main">
+            <section class="module" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <h2 class="module-title font-alt">Bem-vindo(a) ao Innovfund</h2>
+                            <div class="module-subtitle font-serif large-text">Com a ajuda da inteligência artificial
+                                do IBM Watson
+                                estou aqui para auxiliá-lo na captação do benefício tributário de inovação tecnológica
+                                em relação ao
+                                projeto que você está desenvolvendo!</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- floating-chat -->
+            <div class="floating-chat">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <div class="chat">
+                    <div class="header">
+                        <span class="title">
+                            Vamos falar sobre o seu projeto?
+                        </span>
+                        <button style="color: #FFF; font-size: 15px;">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <ul class="messages">
+                        <li class="other">Olá, como posso ajudar?</li>
+                    </ul>
+
+                    <div class="footer">
+                        <div class="text-box" contenteditable="true" disabled="true"></div>
+                        <button id="sendMessage">Enviar</button>
+                    </div>
+                </div>
             </div>
-            <ul class="messages">
-              <li class="other">Olá, como posso ajudar?</li>
-            </ul>
-            <div class="footer">
-              <div class="text-box" contenteditable="true" disabled="true"></div>
-              <button id="sendMessage">send</button>
-            </div>
-          </div>
         </div>
     </main>
     <!--  
@@ -166,5 +186,6 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
