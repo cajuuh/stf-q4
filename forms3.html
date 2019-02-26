@@ -102,7 +102,7 @@
             <div class="col-sm-8 col-sm-offset-2">
               <h4 class="font-alt mb-0">informe abaixo os dados do novo usuário</h4>
               <hr class="divider-w mt-10 mb-20">
-              <ul class="stepper linear">
+              <ul class="stepper horizontal linear">
                 <li class="step active">
                   <div class="step-title waves-effect">Dados do Usuário</div>
                   <div class="step-content">
@@ -132,22 +132,19 @@
                   <div class="step-content">
                     <div class="form-group">
                       <div class="row">
-                        <div class="col-lg-8">
                           O usuário é revisor?
-                        </div>
-                        <div class="col-lg-4">
-                          <input type="checkbox" class="check" id="check" />
-                          <label for="check" style="--d: 25px;">
-                            <svg viewBox="0,0,50,50">
-                              <path d="M5 30 L 20 45 L 45 5"></path>
-                            </svg>
-                          </label>
-                        </div>
+                          <br />
+                          <br />
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-danger btn-round">não</button>
+                            <button type="button" class="btn btn-success btn-round">sim</button>
+                          </div>
                       </div>
                     </div>
                     <div class="step-actions">
                       <!-- Here goes your actions buttons -->
                       <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
+                      <button class="btn btn-d btn-round previous-step">BACK</button>
                     </div>
                   </div>
                 </li>
@@ -158,19 +155,17 @@
                       <div class="row">
                         <div class="col-lg-8">
                           O usuário é administrador?
-                        </div>
-                        <div class="col-lg-4">
-                          <input type="checkbox" class="check" id="check2" />
-                          <label for="check2" style="--d: 25px;">
-                            <svg viewBox="0,0,50,50">
-                              <path d="M5 30 L 20 45 L 45 5"></path>
-                            </svg>
-                          </label>
-                        </div>
+                          <br />
+                          <br />
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-danger btn-round">não</button>
+                            <button type="button" class="btn btn-success btn-round">sim</button>
+                          </div>
                       </div>
                     </div>
                     <div class="step-actions">
                       <!-- Here goes your actions buttons -->
+                      <button class="btn btn-d btn-round previous-step">BACK</button>
                     </div>
                   </div>
                 </li>
@@ -208,13 +203,6 @@
     JavaScripts
     =============================================
     -->
-  <script>
-    var stepper = document.querySelector('.stepper');
-    var stepperInstace = new MStepper(stepper, {
-      // options
-      firstActive: 0 // this is the default
-    })
-  </script>
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- JS -->
@@ -230,6 +218,13 @@
   <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    var stepper = document.querySelector('.stepper');
+    var stepperInstace = new MStepper(stepper, {
+      // options
+      firstActive: 0 // this is the default
+    })
+  </script>
 </body>
 
 </html>
