@@ -700,6 +700,18 @@ a,
   color: #fff;
 }
 
+.btn-danger {
+    color: #fff;
+    background-color: #885555;
+    border-color: #d43f3a;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #435743;
+  border-color: #4cae4c;
+}
+
 .btn.btn-border-w:hover,
 .btn.btn-border-w:focus {
   background: #fff;
