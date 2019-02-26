@@ -68,7 +68,8 @@
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span
               class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
-              class="icon-bar"></span></button><a class="navbar-brand" href="index.html">quantum4</a>
+              class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img
+                src="./assets/images/quantum.png" /></a>
         </div>
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -287,13 +288,6 @@
     JavaScripts
     =============================================
     -->
-  <script>
-    var stepper = document.querySelector('.stepper');
-    var stepperInstace = new MStepper(stepper, {
-      // options
-      firstActive: 0 // this is the default
-    })
-  </script>
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- JS -->
@@ -309,6 +303,13 @@
   <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    var stepper = document.querySelector('.stepper');
+    var stepperInstace = new MStepper(stepper, {
+      // options
+      firstActive: 0 // this is the default
+    })
+  </script>
 </body>
 
 </html>

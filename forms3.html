@@ -208,13 +208,6 @@
     JavaScripts
     =============================================
     -->
-  <script>
-    var stepper = document.querySelector('.stepper');
-    var stepperInstace = new MStepper(stepper, {
-      // options
-      firstActive: 0 // this is the default
-    })
-  </script>
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- JS -->
@@ -230,6 +223,13 @@
   <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    var stepper = document.querySelector('.stepper');
+    var stepperInstace = new MStepper(stepper, {
+      // options
+      firstActive: 0 // this is the default
+    })
+  </script>
 </body>
 
 </html>
