@@ -45,9 +45,14 @@
   <!-- Main stylesheet and color file-->
   <link href="assets/css/style.css" rel="stylesheet">
   <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.0.0/dist/css/mstepper.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="assets/css/mstepper.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Materializecss compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <!-- jQueryValidation Plugin -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
@@ -132,13 +137,13 @@
                   <div class="step-content">
                     <div class="form-group">
                       <div class="row">
-                          O usuário é revisor?
-                          <br />
-                          <br />
-                          <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-danger btn-round">não</button>
-                            <button type="button" class="btn btn-success btn-round">sim</button>
-                          </div>
+                        O usuário é revisor?
+                        <br />
+                        <br />
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-danger btn-round">não</button>
+                          <button type="button" class="btn btn-success btn-round">sim</button>
+                        </div>
                       </div>
                     </div>
                     <div class="step-actions">
@@ -161,20 +166,18 @@
                             <button type="button" class="btn btn-danger btn-round">não</button>
                             <button type="button" class="btn btn-success btn-round">sim</button>
                           </div>
+                        </div>
+                      </div>
+                      <div class="step-actions">
+                        <!-- Here goes your actions buttons -->
+                        <button class="waves-effect waves-dark btn" type="submit"><i class="fa fa-send"></i> enviar</button>
+                        <button class="btn btn-d btn-round previous-step">BACK</button>
                       </div>
                     </div>
-                    <div class="step-actions">
-                      <!-- Here goes your actions buttons -->
-                      <button class="btn btn-d btn-round previous-step">BACK</button>
-                    </div>
-                  </div>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="centralize bottom-down">
-          <button class="btn btn-d btn-round" type="submit"><i class="fa fa-send"></i> enviar</button>
         </div>
       </section>
       <div class="floating-chat">
@@ -206,7 +209,7 @@
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- JS -->
-  <script src="https://unpkg.com/materialize-stepper@3.0.0/dist/js/mstepper.min.js"></script>
+  <script src="assets/js/mstepper.js"></script>
   <script src="assets/lib/wow/dist/wow.js"></script>
   <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
   <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>

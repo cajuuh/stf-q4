@@ -52,10 +52,15 @@
   <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
   <!-- Main stylesheet and color file-->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/mstepper.css" rel="stylesheet">
   <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/mstepper.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Materializecss compiled and minified JavaScript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script> -->
+  <!-- jQueryValidation Plugin -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
@@ -108,10 +113,10 @@
       <section class="module">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div>
               <h4 class="font-alt mb-0">informe abaixo os dados do projeto</h4>
               <hr class="divider-w mt-10 mb-20">
-              <ul class="stepper horizontal linear">
+              <ul class="stepper horizontal">
                 <li class="step active">
                   <div class="step-title waves-effect">Dados do Projeto</div>
                   <div class="step-content">
@@ -235,6 +240,7 @@
                     </div>
                     <div class="step-actions">
                       <!-- Here goes your actions buttons -->
+                      <button class="waves-effect waves-dark btn" type="submit"><i class="fa fa-send"></i> enviar</button>
                       <button class="btn btn-d btn-round previous-step">BACK</button>
                     </div>
                   </div>
@@ -243,9 +249,9 @@
             </div>
           </div>
         </div>
-        <div class="centralize bottom-down">
+        <!-- <div class="centralize bottom-down">
           <button class="btn btn-d btn-round" type="submit"><i class="fa fa-send"></i> enviar</button>
-        </div>
+        </div> -->
       </section>
       <div class="floating-chat">
         <i class="fa fa-comments" aria-hidden="true"></i>
@@ -268,7 +274,7 @@
           </div>
         </div>
       </div>
-  </main>
+
   <!--  
     JavaScripts
     =============================================
