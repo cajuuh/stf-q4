@@ -964,6 +964,10 @@ blockquote {
   color: #111;
 }
 
+.title-welcome {
+  padding-bottom: 5%;
+}
+
 .module-subtitle {
   text-align: center;
   font-size: 16px;
