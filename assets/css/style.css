@@ -19,9 +19,6 @@ img {
   height: auto;
 }
 
-ul li {
-  list-style-type: none;
-}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -1772,8 +1769,10 @@ Google map
   text-align: center;
 }
 
-.projects-table {
-  border: 1px solid #111;
+ul>.projects-table {
+  margin-top: 0.2%;
+  margin-left: 0.2%;
+  border: 1px solid rgb(129, 129, 129);
 }
 
 .price-table:hover {
@@ -1919,7 +1918,8 @@ Google map
 .works-grid {
   list-style: none;
   padding: 0;
-  margin: 0;
+  /* margin: 0; */
+  margin-left: 10%;
 }
 
 .works-grid.works-grid-gut {
@@ -1950,6 +1950,10 @@ Google map
 
 .works-grid-5 .work-item {
   width: 20%;
+}
+
+.works-grid-6 {
+  width: 150%;
 }
 
 .work-item > a {
