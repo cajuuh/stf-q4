@@ -674,6 +674,8 @@ a,
   letter-spacing: 2px;
   font-size: 11px;
   padding: 8px 37px;
+  color: white;
+  background: #3758A7;
 }
 
 .btn.active.focus,
@@ -764,13 +766,13 @@ a,
 }
 
 .btn.btn-b {
-  background: #111111;
-  color: #fff;
+  background: rgb(240, 240, 240);
+  color: #3758A7;
 }
 
 .btn.btn-b:hover,
 .btn.btn-b:focus {
-  background: rgba(17, 17, 17, 0.8);
+  background: rgba(240, 240, 240, 0.8);
 }
 
 .btn-border-d {
@@ -872,6 +874,23 @@ a,
   border-color: #CACACA;
 }
 
+.form-control-innovfund {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(55, 88, 167);
+  width: 95%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  height: 33px;
+  border: 1px solid #EAEAEA;
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.form-control-innovfund:focus-innovfund {
+  border-color: #CACACA;
+}
+
 /* Forms size */
 .input-lg,
 .form-horizontal .form-group-lg .form-control {
@@ -880,6 +899,17 @@ a,
 }
 
 .input-sm, .form-horizontal .form-group-sm .form-control {
+  height: 29px;
+  font-size: 10px;
+}
+
+.input-lg,
+.form-horizontal .form-group-lg .form-control-innovfund {
+  height: 43px;
+  font-size: 13px;
+}
+
+.input-sm, .form-horizontal .form-group-sm .form-control-innovfund {
   height: 29px;
   font-size: 10px;
 }
@@ -901,6 +931,16 @@ a,
 --------------------------------------------------------------*/
 a {
   color: #111;
+}
+
+.inicial {
+  color: rgb(207, 207, 207) !important;
+}
+
+.inicial:hover, .inicial:focus {
+  text-decoration: none !important;
+  color: rgb(90, 90, 90) !important;
+  outline: 0 !important;
 }
 
 a:hover, a:focus {
@@ -1319,6 +1359,14 @@ General Styles - Owlcarousel
   color: #fff;
 }
 
+.navbar-custom .navbar-brand-internal {
+  margin-top: -4%;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #3758A7;
+}
+
 .navbar-custom .nav li > a {
   position: relative;
   color: rgba(0, 0, 0, 0.7);
@@ -1472,8 +1520,17 @@ General Styles - Owlcarousel
   background-repeat: no-repeat;
 }
 
+.pricing-page-header-blue {
+  background-position: 40% 14%;
+  background-repeat: no-repeat;
+}
+
 .pricing-page-header:before {
   background: rgba(2, 2, 2, 0.6);
+}
+
+.pricing-page-header-blue:before {
+  background: rgba(55, 88, 167, 0.8);
 }
 
 /* Gallery Page Header */
@@ -1618,7 +1675,7 @@ Google map
 .alt-features-item {
   position: relative;
   padding-left: 55px;
-  margin: 10px 0 0 25px;
+  /* margin: 10px 0 0 25px; */
 }
 
 .alt-features-icon {
@@ -1776,7 +1833,11 @@ ul>.projects-table {
 }
 
 .price-table:hover {
-  border-color: #CACACA;
+  background: #5180FB;
+}
+
+a>.price-table:hover {
+  color: white !important;
 }
 
 .price-table.best {
@@ -1949,7 +2010,8 @@ ul>.projects-table {
 }
 
 .works-grid-5 .work-item {
-  width: 20%;
+  width: 30%;
+  /* height: 130%; */
 }
 
 .works-grid-6 {
@@ -2025,11 +2087,11 @@ ul>.projects-table {
 
 /* Work item white background*/
 .works-grid.works-hover-w .work-title {
-  color: #111;
+  color: #fff;
 }
 
 .works-grid.works-hover-w .work-item:hover .work-image:after {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(81, 128, 251, 0.8);
 }
 
 /* Work item gradien background*/
@@ -3256,6 +3318,10 @@ input.check:focus + label {
   color: white;
 }
 
+.justify-center {
+  text-align: justify;
+}
+
 @keyframes show-chat-even {
   0% {
     margin-left: -480px;
@@ -3305,3 +3371,28 @@ input.check:focus + label {
   }
 }
 
+.video-player {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 31, 161, 0.678); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.bg-blue {
+  background: #3758A7;
+}
+
+.whitelize {
+  color: white;
+}
+
+.mkit-blue {
+  color: #3758A7 !important;
+}
