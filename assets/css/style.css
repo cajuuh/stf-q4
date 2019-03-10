@@ -268,6 +268,25 @@ a,
   color: #fff;
 }
 
+.bg-dark,
+.bg-dark-30-blue,
+.bg-dark-60,
+.bg-dark-90,
+.bg-dark .module-title,
+.bg-dark-30 .module-title,
+.bg-dark-60 .module-title,
+.bg-dark-90 .module-title,
+.bg-dark .module-subtitle,
+.bg-dark-30 .module-subtitle,
+.bg-dark-60 .module-subtitle,
+.bg-dark-90 .module-subtitle,
+.bg-dark .alt-module-subtitle h5,
+.bg-dark-30 .alt-module-subtitle h5,
+.bg-dark-60 .alt-module-subtitle h5,
+.bg-dark-90 .alt-module-subtitle h5 {
+  color: rgba(55, 88, 167, 1);
+}
+
 .bg-dark {
   background: #111;
 }
@@ -1468,7 +1487,7 @@ General Styles - Owlcarousel
 --------------------------------------------------------------*/
 .home-section {
   position: relative;
-  background-color: #fff;
+  background-color: rgba(55, 88, 167, 1);
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -3395,4 +3414,8 @@ input.check:focus + label {
 
 .mkit-blue {
   color: #3758A7 !important;
+}
+
+.mbYTP_wrapper {
+  opacity: 0.2 !important;
 }
