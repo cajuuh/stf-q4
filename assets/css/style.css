@@ -694,7 +694,23 @@ a,
   font-size: 11px;
   padding: 8px 37px;
   color: white;
-  background: #3758A7;
+  background: #5180FB;
+}
+
+.btn-form {
+  border-radius: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  padding: 8px 37px;
+  color: white;
+  background: #5180FB;
+}
+
+.btn-form:hover,.btn-form:focus{
+  background: rgb(221, 221, 221);
+  color: #5180FB;
 }
 
 .btn.active.focus,
@@ -775,13 +791,14 @@ a,
 }
 
 .btn.btn-d {
-  background: rgba(17, 17, 17, 0.8);
+  background: rgba(55, 88, 167, 0.8);
   color: #fff;
 }
 
 .btn.btn-d:hover,
 .btn.btn-d:focus {
-  background: #111111;
+  background: rgb(221, 221, 221);
+  color: #3758A7;
 }
 
 .btn.btn-b {
@@ -958,7 +975,7 @@ a {
 
 .inicial:hover, .inicial:focus {
   text-decoration: none !important;
-  color: rgb(90, 90, 90) !important;
+  color: rgb(253, 253, 253) !important;
   outline: 0 !important;
 }
 
@@ -1429,7 +1446,7 @@ General Styles - Owlcarousel
 }
 
 .navbar-custom .dropdown-menu > li > a:hover {
-  background: rgba(148, 148, 148, 0.1) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 .navbar-custom .dropdown-toggle:after {
@@ -1841,12 +1858,13 @@ Google map
 	Price Table
 --------------------------------------------------------------*/
 .price-table {
-  background: #fff;
+  background: #5180FB;
   border: 1px solid #eaeaea;
   padding: 25px 20px;
   margin: 15px 0 30px;
   border-radius: 2px;
   text-align: center;
+  color: #fff !important;
 }
 
 ul>.projects-table {
@@ -1856,11 +1874,11 @@ ul>.projects-table {
 }
 
 .price-table:hover {
-  background: #5180FB;
+  background: #fff;
 }
 
 a>.price-table:hover {
-  color: white !important;
+  color: #5180FB !important;
 }
 
 .price-table.best {
@@ -3137,6 +3155,7 @@ input.check:focus + label {
 /**
 * Floating chat
 */
+
 .floating-chat {
   cursor: pointer;
   display: flex;
@@ -3144,8 +3163,8 @@ input.check:focus + label {
   justify-content: center;
   color: #FFF;
   position: fixed;
-  bottom: 45px;
-  right: 10px;
+  bottom: 80px;
+  right: 45px;
   width: 75px;
   height: 75px;
   transform: translateY(70px);
@@ -3213,7 +3232,7 @@ input.check:focus + label {
   padding-bottom: 10px;
   display: flex;
   background: transparent;
-  background-color: rgb(16, 16, 17);
+  background-color: rgb(55,88,167);
   padding: 10px;
   font-size: 15px;
 }
