@@ -11,7 +11,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 16px/1.8 "Open Sans", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -695,7 +695,7 @@ a,
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 16px;
   padding: 8px 37px;
   color: white;
   background: #5180FB;
@@ -706,7 +706,7 @@ a,
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 16px;
   padding: 8px 37px;
   color: white;
   background: #5180FB;
@@ -935,7 +935,7 @@ a,
 .input-lg,
 .form-horizontal .form-group-lg .form-control {
   height: 43px;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .input-sm, .form-horizontal .form-group-sm .form-control {
@@ -946,7 +946,7 @@ a,
 .input-lg,
 .form-horizontal .form-group-lg .form-control-innovfund {
   height: 43px;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .input-sm, .form-horizontal .form-group-sm .form-control-innovfund {
@@ -1047,7 +1047,7 @@ blockquote {
 
 .module-subtitle {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   color: #111;
   margin-bottom: 70px;
 }
@@ -1375,7 +1375,7 @@ General Styles - Owlcarousel
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 11px;
+  font-size: 16px;
   transition: background, padding 0.4s ease-in-out 0s;
 }
 
@@ -1421,6 +1421,7 @@ General Styles - Owlcarousel
   padding: 11px 15px;
   letter-spacing: 2px;
   color: rgb(0, 0, 0);
+  font-size: 18px;
 }
 
 .navbar-custom .dropdown-menu .dropdown-menu {
@@ -3462,5 +3463,5 @@ input.check:focus + label {
 }
 
 .upsize {
-  font-size: 15px;
+  font-size: 20px;
 }
