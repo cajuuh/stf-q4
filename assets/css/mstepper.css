@@ -109,6 +109,7 @@ ul.stepper .step .step-content .step-actions .btn-large:not(:last-child) {
 
 ul.stepper .step .step-content .row {
   margin-bottom: 7px;
+  margin-left: 4%;
 }
 
 ul.stepper .step::before {
