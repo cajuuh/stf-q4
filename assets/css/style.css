@@ -1370,6 +1370,10 @@ General Styles - Owlcarousel
   box-shadow: none;
 }
 
+.navbar-brand {
+  line-height: 35px !important;
+}
+
 .navbar-custom .navbar-brand {
   margin-top: -4%;
   letter-spacing: 4px;
@@ -3414,6 +3418,10 @@ input.check:focus + label {
 
 .mkit-blue {
   color: #3758A7 !important;
+}
+
+.mkit-white {
+  color: #fff !important;
 }
 
 .mbYTP_wrapper {
