@@ -713,7 +713,7 @@ a,
 }
 
 .btn-form:hover,.btn-form:focus{
-  background: rgb(221, 221, 221);
+  background: rgb(255, 255, 255);
   color: #5180FB;
 }
 
@@ -801,12 +801,12 @@ a,
 
 .btn.btn-d:hover,
 .btn.btn-d:focus {
-  background: rgb(221, 221, 221);
+  background: rgb(255, 255, 255);
   color: #3758A7;
 }
 
 .btn.btn-b {
-  background: rgb(240, 240, 240);
+  background: rgb(255, 255, 255);
   color: #3758A7;
 }
 
