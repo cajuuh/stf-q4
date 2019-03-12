@@ -2877,8 +2877,8 @@ a>.price-table:hover {
 @media (min-width: 768px) {
   .navbar-transparent {
     background: rgba(255, 255, 255, 1) !important;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    /* padding-bottom: 15px;
+    padding-top: 15px; */
   }
   .navbar-custom .dropdown-menu {
     position: absolute;
@@ -3464,4 +3464,23 @@ input.check:focus + label {
 
 .upsize {
   font-size: 20px;
+}
+
+.my-content {
+  display: flex;
+}
+
+.my-cols-1 {
+  flex: 1 0 70%;
+  align-items: center;
+  text-align: justify;
+  margin-right: 4%;
+  /* display: table-cell !important; */
+}
+
+.my-cols-2 {
+  flex: 1 0 30%;
+  align-self: center;
+  flex-direction: column;
+  /* display: table-cell !important; */
 }
